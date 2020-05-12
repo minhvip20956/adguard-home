@@ -1,18 +1,16 @@
 ## 1. Setup Adguard Home:
 
-**a) Ubuntu x64 Server**
+**a) Ubuntu amd64 Server**
 
 ```Text
-sudo apt install wget -y && wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
-
+sudo apt install wget -y
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
 tar -xvf AdGuardHome_linux_amd64.tar.gz
-
 rm AdGuardHome_linux_amd64.tar.gz
-
 cd /home/{User}/AdGuardHome/
-
 sudo ./AdGuardHome -s install
 ```
+
 Replace {User} with the personal directory name of the account you own
 
 ## 2. Setup AdGuard Home Basic:
@@ -23,24 +21,30 @@ Please complete installation with default settings
 
 **b) Open Port:**
 
-- http port: 80
+- Manager HTTP: 80 (TCP - UDP)
 
-- https port: 443
+- Manager HTTPS: 443 (TCP - UDP)
 
-- DNS Port: 53 (TCP and UDP)
+- Public DNS: 53 (TCP - UDP, without DNSSEC)
 
-- TLS DNS: {YOUR-DOMAIN}:853 (TCP)
+- DoT DNS: tls://{YOUR-DOMAIN}:853 (TCP)
 
-- HTTP DNS: https://{YOUR-DOMAIN}/dns-query
+- DoH DNS: https://{YOUR-DOMAIN}/dns-query (Same location with Manager HTTPS)
 
 **c) Set time zone**
 
+```Text
+
 sudo dpkg-reconfigure tzdata
+
+```
 
 **d) Set up SSL**
 
+```Text
 sudo apt install certbot -y
 certbot -d domain.ltd --manual --preferred-challenges dns certonly
+```
 
 **e) Crontab**
 
