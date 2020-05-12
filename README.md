@@ -1,17 +1,18 @@
 ## 1. Setup Adguard Home:
 
-**a) Ubuntu amd64 Server**
+**a) Ubuntu/Debian amd64 Server**
 
 ```Text
-sudo apt install wget -y
+cd /
+apt-get install sudo nano bind9-host wget -y
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
 tar -xvf AdGuardHome_linux_amd64.tar.gz
 rm AdGuardHome_linux_amd64.tar.gz
-cd /home/{User}/AdGuardHome/
+cd /AdGuardHome/
 sudo ./AdGuardHome -s install
 ```
 
-Replace {User} with the personal directory name of the account you own
+**b) Ubuntu/Debian/Armbian arm64 Server**
 
 ## 2. Setup AdGuard Home Basic:
 
