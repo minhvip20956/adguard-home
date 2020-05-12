@@ -4,15 +4,58 @@
 
 ```Text
 cd /
-apt-get install sudo nano bind9-host wget -y
+apt install sudo nano bind9-host wget -y
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
 tar -xvf AdGuardHome_linux_amd64.tar.gz
 rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
-sudo ./AdGuardHome -s install
+./AdGuardHome -s install
 ```
 
 **b) Ubuntu/Debian/Armbian arm64 Server**
+
+```Text
+cd /
+apt install sudo nano bind9-host wget -y
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
+tar -xvf AdGuardHome_linux_arm64.tar.gz
+rm AdGuardHome_linux_arm64.tar.gz
+cd /AdGuardHome/
+./AdGuardHome -s install
+```
+
+**c) Raspberry Pi (32-bit ARMv6) Server**
+
+```Text
+cd /
+apt install sudo nano bind9-host wget -y
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz
+tar -xvf AdGuardHome_linux_arm.tar.gz
+rm AdGuardHome_linux_arm.tar.gz
+cd /AdGuardHome/
+./AdGuardHome -s install
+```
+
+**c) CentOS amd64 Server**
+
+```Text
+firewall-cmd --zone=public --permanent --add-port 80/tcp
+firewall-cmd --zone=public --permanent --add-port 80/udp
+firewall-cmd --zone=public --permanent --add-port 443/tcp
+firewall-cmd --zone=public --permanent --add-port 443/udp
+firewall-cmd --zone=public --permanent --add-port 53/tcp
+firewall-cmd --zone=public --permanent --add-port 53/udp
+firewall-cmd --zone=public --permanent --add-port 853/tcp
+firewall-cmd --zone=public --permanent --add-port 3000/tcp
+firewall-cmd --reload
+cd /
+yum install nano bind9-host wget -y
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
+tar -xvf AdGuardHome_linux_amd64.tar.gz
+rm AdGuardHome_linux_amd64.tar.gz
+cd /AdGuardHome/
+./AdGuardHome -s install
+```
 
 ## 2. Setup AdGuard Home Basic:
 
