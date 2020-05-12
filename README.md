@@ -1,4 +1,6 @@
-## 1. Setup Adguard Home for Linux x64 Server
+## 1. Setup Adguard Home:
+
+**a) Ubuntu x64 Server**
 
 ```Text
 sudo apt install wget -y && wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
@@ -13,7 +15,7 @@ sudo ./AdGuardHome -s install
 ```
 Replace {User} with the personal directory name of the account you own
 
-## 2. Setup AdGuard Home Basic
+## 2. Setup AdGuard Home Basic:
 
 **a) Finish Setup: http://{YOUR-IP-ADDRESS}:3000**
 
@@ -42,14 +44,18 @@ certbot -d domain.ltd --manual --preferred-challenges dns certonly
 
 **e) Crontab**
 
+```Text
 crontab -e
+```
+
+- For Ubuntu
 
 ```Text
 50 4 * * * apt update -y && apt upgrade -y && apt autoremove -y && reboot
 00 00 * * * certbot renew --manual-auth-hook /etc/letsencrypt/renewal-hooks/pre/dnsauthenticator.sh
 ```
 
-## 3. Block Filters List
+## 3. Block Filters List:
 
 **a) Default List (Recommended):**
 
