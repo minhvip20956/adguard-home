@@ -34,9 +34,7 @@ Please complete installation with default settings
 **c) Set time zone**
 
 ```Text
-
 sudo dpkg-reconfigure tzdata
-
 ```
 
 **d) Set up SSL**
