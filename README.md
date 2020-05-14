@@ -126,6 +126,7 @@ https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 https://mirror1.malwaredomains.com/files/justdomains
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
+https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 ```
 
 ## 4. Allow Lists:
