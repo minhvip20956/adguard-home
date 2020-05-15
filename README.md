@@ -130,6 +130,7 @@ https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
 https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
 https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
+https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
 ```
 
 ## 4. Allow Lists:
