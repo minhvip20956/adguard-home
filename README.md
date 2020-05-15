@@ -129,6 +129,7 @@ https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
 https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
+https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 ```
 
 ## 4. Allow Lists:
@@ -136,6 +137,7 @@ https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
 ```Text
 https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
+https://github.com/EnergizedProtection/unblock/raw/master/basic/formats/domains.txt
 ```
 
 ## 5. DNS Rewrite:
