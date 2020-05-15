@@ -131,6 +131,7 @@ https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-g
 https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
 https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
+https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google.txt
 ```
 
 ## 4. Allow Lists:
