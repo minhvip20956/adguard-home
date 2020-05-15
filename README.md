@@ -127,6 +127,8 @@ https://mirror1.malwaredomains.com/files/justdomains
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://www.dshield.org/feeds/suspiciousdomains_Low.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
+https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
 ```
 
 ## 4. Allow Lists:
