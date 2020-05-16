@@ -1,4 +1,4 @@
-![Image AdGuardHome](/bg.jpg)
+![AdGuardHome Banner](/bg.jpg)
 
 ## 1. Setup Adguard Home:
 
@@ -59,6 +59,8 @@ rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
 ./AdGuardHome -s install
 ```
+
+![AdGuardHome Image1](/home1.png)
 
 ## 2. Setup AdGuard Home and Server Basic:
 
