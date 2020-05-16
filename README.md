@@ -66,9 +66,9 @@ cd /AdGuardHome/
 
 **a) Finish Setup: http://{YOUR-IP-ADDRESS}:3000**
 
-Please complete installation with default settings!!!
+Please complete the installation with the default settings. Make sure ports 80 and 53 are not occupied!!!
 
-**b) Open Port:**
+**b) Open the ports (if your server is behind a firewall. Ignore if it is an internal server):**
 
 - Manager HTTP: 80 (TCP - UDP)
 
@@ -171,6 +171,8 @@ https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.l
 https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
 ```
 
+![AdGuardHome Image3](/home3.jpg)
+
 ## 4. Allow Lists:
 
 ```Text
@@ -178,6 +180,8 @@ https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/e
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
 https://github.com/EnergizedProtection/unblock/raw/master/basic/formats/domains.txt
 ```
+
+![AdGuardHome Image4](/deve.png)
 
 ## 5. Edit "AdGuardHome.yaml" (For Advanced):
 
