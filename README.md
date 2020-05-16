@@ -99,6 +99,20 @@ sudo apt install certbot -y
 certbot -d domain.ltd --manual --preferred-challenges dns certonly
 ```
 
+Replace domain.ltd with your domain name. Please A Record to your server.
+
+This command will run the DNS challenge for you. Refer to how to overcome DNS challenges here: https://certbot.eff.org/docs/using.html#manual
+
+After passing the DNS challenge, you will be provided with the location to save the necessary PEM files of the following form:
+
+```Text
+/etc/letsencrypt/live/{domain.ltd}/fullchain.pem
+
+/etc/letsencrypt/live/{domain.ltd}/privkey.pem
+```
+
+Please add each of the location one by one to AdGuardHome's settings.
+
 **e) Crontab (Renew SSL every day and auto update and reboot server at 4:50AM)**
 
 ```Text
