@@ -18,8 +18,8 @@ sudo ./AdGuardHome -s install
 
 ```Text
 cd /
-apt install sudo nano bind9-host wget -y
-wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
+sudo apt install sudo nano bind9-host wget -y
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
 sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
 sudo rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
@@ -30,12 +30,12 @@ sudo ./AdGuardHome -s install
 
 ```Text
 cd /
-apt install sudo nano bind9-host wget -y
-wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz
-tar -xvf AdGuardHome_linux_arm.tar.gz
-rm AdGuardHome_linux_arm.tar.gz
+sudo apt install sudo nano bind9-host wget -y
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
+sudo rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
-./AdGuardHome -s install
+sudo ./AdGuardHome -s install
 ```
 
 **c) CentOS amd64 Server**
