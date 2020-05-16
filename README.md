@@ -1,3 +1,6 @@
+![Image AdGuardHome](/bg.jpg)
+
+
 ## 1. Setup Adguard Home:
 
 **a) Ubuntu/Debian amd64 Server**
