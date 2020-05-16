@@ -1,4 +1,4 @@
-![AdGuardHome Banner](/home3.jpg)
+![AdGuardHome Banner](/home2.jpg)
 
 ## 1. Setup Adguard Home:
 
@@ -137,7 +137,7 @@ crontab -e
 00 00 * * * certbot renew --manual-auth-hook /etc/letsencrypt/renewal-hooks/pre/dnsauthenticator.sh
 ```
 
-![AdGuardHome Image2](/home2.jpg)
+![AdGuardHome Image2](/bg.jpg)
 
 ## 3. Block Filters List:
 
@@ -171,7 +171,7 @@ https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.l
 https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
 ```
 
-![AdGuardHome Image3](/bg.jpg)
+![AdGuardHome Image3](/home3.jpg)
 
 ## 4. Allow Lists:
 
