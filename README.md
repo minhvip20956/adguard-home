@@ -38,7 +38,7 @@ cd /AdGuardHome/
 sudo ./AdGuardHome -s install
 ```
 
-**c) CentOS amd64 Server**
+**c) CentOS amd64 Server(with Root Address)**
 
 ```Text
 firewall-cmd --zone=public --permanent --add-port 80/tcp
