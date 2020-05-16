@@ -137,7 +137,7 @@ crontab -e
 00 00 * * * certbot renew --manual-auth-hook /etc/letsencrypt/renewal-hooks/pre/dnsauthenticator.sh
 ```
 
-![AdGuardHome Image2](/adguard.jpg)
+![AdGuardHome Image2](/home2.jpg)
 
 ## 3. Block Filters List:
 
