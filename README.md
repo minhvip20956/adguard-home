@@ -1,4 +1,4 @@
-![AdGuardHome Banner](/bg.jpg)
+![AdGuardHome Banner](/home3.jpg)
 
 ## 1. Setup Adguard Home:
 
@@ -38,7 +38,7 @@ cd /AdGuardHome/
 sudo ./AdGuardHome -s install
 ```
 
-**c) CentOS amd64 Server(with Root Address)**
+**c) CentOS amd64 Server(Access Root account)**
 
 ```Text
 firewall-cmd --zone=public --permanent --add-port 80/tcp
@@ -171,7 +171,7 @@ https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.l
 https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
 ```
 
-![AdGuardHome Image3](/home3.jpg)
+![AdGuardHome Image3](/bg.jpg)
 
 ## 4. Allow Lists:
 
