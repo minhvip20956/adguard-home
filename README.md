@@ -187,7 +187,7 @@ nano AdGuardHome.yaml
 - Add the amount of DNS buffer (This option depends on the amount of free RAM on your server), find "cache_size:" and edit:
 
 ```Text
-128 MB = 134217728 (Recommended)
+128 MB = 134217728 (Recommended, For 1GB RAM Server)
 256 MB = 268435456 (For 1,5GB RAM Server)
 1024 MB = 1073741824 (For 2GB RAM Server)
 ```
