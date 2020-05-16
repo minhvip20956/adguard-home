@@ -2,31 +2,31 @@
 
 ## 1. Setup Adguard Home:
 
-**a) Ubuntu/Debian amd64 Server**
+**a) Ubuntu amd64 Server**
 
 ```Text
 cd /
-apt install sudo nano bind9-host wget -y
-wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
-tar -xvf AdGuardHome_linux_amd64.tar.gz
-rm AdGuardHome_linux_amd64.tar.gz
+sudo apt install sudo nano bind9-host wget -y
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
+sudo rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
-./AdGuardHome -s install
+sudo ./AdGuardHome -s install
 ```
 
-**b) Ubuntu/Debian/Armbian arm64 Server**
+**b) Ubuntu/Armbian arm64 Server**
 
 ```Text
 cd /
 apt install sudo nano bind9-host wget -y
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
-tar -xvf AdGuardHome_linux_arm64.tar.gz
-rm AdGuardHome_linux_arm64.tar.gz
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
+sudo rm AdGuardHome_linux_amd64.tar.gz
 cd /AdGuardHome/
-./AdGuardHome -s install
+sudo ./AdGuardHome -s install
 ```
 
-**c) Raspbian/Ubuntu/Armbian Server**
+**c) Raspbian arm86 Server**
 
 ```Text
 cd /
