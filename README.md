@@ -24,7 +24,7 @@ cd /AdGuardHome/
 ./AdGuardHome -s install
 ```
 
-**c) Raspberry Pi (32-bit ARMv6) Server**
+**c) Raspbian/Ubuntu/Armbian Server**
 
 ```Text
 cd /
@@ -49,6 +49,7 @@ firewall-cmd --zone=public --permanent --add-port 853/tcp
 firewall-cmd --zone=public --permanent --add-port 3000/tcp
 firewall-cmd --reload
 cd /
+yum install epel-release -y
 yum install nano bind9-host wget -y
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
 tar -xvf AdGuardHome_linux_amd64.tar.gz
@@ -57,11 +58,11 @@ cd /AdGuardHome/
 ./AdGuardHome -s install
 ```
 
-## 2. Setup AdGuard Home Basic:
+## 2. Setup AdGuard Home and Server Basic:
 
 **a) Finish Setup: http://{YOUR-IP-ADDRESS}:3000**
 
-Please complete installation with default settings
+Please complete installation with default settings!!!
 
 **b) Open Port:**
 
@@ -69,35 +70,52 @@ Please complete installation with default settings
 
 - Manager HTTPS: 443 (TCP - UDP)
 
-- Public DNS: 53 (TCP - UDP, without DNSSEC)
+- Public DNS: 53 (TCP - UDP, without DNSSEC (Support DNSSEC after Enable in Setting))
 
 - DoT DNS: tls://{YOUR-DOMAIN}:853 (TCP)
 
 - DoH DNS: https://{YOUR-DOMAIN}/dns-query (Same location with Manager HTTPS)
 
-**c) Set time zone**
+**c) Set time zone (for Crontab)**
 
 ```Text
 sudo dpkg-reconfigure tzdata
 ```
 
-**d) Set up SSL**
+**d) Set up SSL (if you want used Dot/DoH DNS Option and Secure Setup Page)**
+
+- For Ubuntu/Raspbian/Debian/Armbian
 
 ```Text
 sudo apt install certbot -y
 certbot -d domain.ltd --manual --preferred-challenges dns certonly
 ```
 
-**e) Crontab**
+- For CentOS
+
+```Text
+yum install epel-release -y
+sudo apt install certbot -y
+certbot -d domain.ltd --manual --preferred-challenges dns certonly
+```
+
+**e) Crontab (Renew SSL every day and auto update and reboot server at 4:50AM)**
 
 ```Text
 crontab -e
 ```
 
-- For Ubuntu
+- For Ubuntu/Raspbian/Debian/Armbian
 
 ```Text
 50 4 * * * apt update -y && apt upgrade -y && apt autoremove -y && reboot
+00 00 * * * certbot renew --manual-auth-hook /etc/letsencrypt/renewal-hooks/pre/dnsauthenticator.sh
+```
+
+- For CentOS
+
+```Text
+50 4 * * * yum update -y && yum upgrade -y && yum autoremove -y && reboot
 00 00 * * * certbot renew --manual-auth-hook /etc/letsencrypt/renewal-hooks/pre/dnsauthenticator.sh
 ```
 
@@ -131,7 +149,6 @@ https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-g
 https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
 https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
-https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google.txt
 ```
 
 ## 4. Allow Lists:
@@ -142,10 +159,35 @@ https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
 https://github.com/EnergizedProtection/unblock/raw/master/basic/formats/domains.txt
 ```
 
-## 5. DNS Rewrite:
+## 5. Edit "AdGuardHome.yaml" (For Advanced):
+
+**a) Open "AdGuardHome.yaml" file with Nano:***
 
 ```Text
-172.217.1.14	manifest.googlevideo.com
+cd /AdGuardHome/
+nano AdGuardHome.yaml
 ```
 
-(https://www.reddit.com/r/pihole/comments/9w5swx/i_think_ive_managed_to_block_youtube_ads_with/)
+**b) "AdGuardHome.yaml" optimization:***
+
+- Add the amount of DNS buffer (This option depends on the amount of free RAM on your server), find "cache_size:" and edit:
+
+```Text
+128 MB = 134217728 (Recommended)
+256 MB = 268435456 (For 1,5GB RAM Server)
+1024 MB = 1073741824 (For 2GB RAM Server)
+```
+
+- Other ENV:
+
+```Text
+  cache_ttl_min: 3600
+  cache_ttl_max: 86400
+  safebrowsing_cache_size: 134217728  
+```
+
+After setting. Type the following command to restart AdGuard
+
+```Text
+./ AdGuardHome -s restart
+```
