@@ -141,34 +141,19 @@ crontab -e
 
 ## 3. Block Filters List:
 
-**a) Default List (Recommended):**
-
 ```Text
 https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 https://adaway.org/hosts.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
-```
-
-**b) Selection list (Recommended):**
-
-```Text
 https://filters.adtidy.org/extension/chromium/filters/15.txt
 https://dbl.oisd.nl/
 https://abpvn.com/android/abpvn.txt
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/domain.txt
 https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
-https://v.firebog.net/hosts/static/w3kbl.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://mirror1.malwaredomains.com/files/justdomains
-https://v.firebog.net/hosts/Prigent-Malware.txt
-https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
-https://www.dshield.org/feeds/suspiciousdomains_Low.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
-https://gitlab.com/EnergizedProtection/block/raw/master/ultimate/formats/hosts
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
-https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+https://v.firebog.net/hosts/Easylist.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
