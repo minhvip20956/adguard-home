@@ -163,7 +163,6 @@ https://v.firebog.net/hosts/Easylist.txt
 ```Text
 https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
-https://github.com/EnergizedProtection/unblock/raw/master/basic/formats/domains.txt
 ```
 
 ![AdGuardHome Image4](/deve.png)
