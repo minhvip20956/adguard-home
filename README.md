@@ -191,7 +191,7 @@ nano AdGuardHome.yaml
 ```Text
   cache_ttl_min: 3600
   cache_ttl_max: 86400
-  safebrowsing_cache_size: 134217728  
+  safebrowsing_cache_size: 134217728
 ```
 
 After setting. Type the following command to restart AdGuard
