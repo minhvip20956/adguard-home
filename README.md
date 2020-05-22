@@ -161,9 +161,6 @@ https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
-https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
