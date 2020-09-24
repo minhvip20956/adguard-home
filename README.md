@@ -5,59 +5,60 @@
 **a) Ubuntu amd64 Server**
 
 ```Text
-cd /
-sudo apt install sudo nano bind9-host wget -y
-sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
-sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
-sudo rm AdGuardHome_linux_amd64.tar.gz
-cd /AdGuardHome/
-sudo ./AdGuardHome -s install
+cd /;\
+sudo apt install sudo nano bind9-host wget -y;\
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz;\
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz;\
+sudo rm AdGuardHome_linux_amd64.tar.gz;\
+cd /AdGuardHome/;\
+sudo ./AdGuardHome -s install;\
 ```
 
 **b) Ubuntu/Armbian arm64 Server**
 
 ```Text
-cd /
-sudo apt install sudo nano bind9-host wget -y
-sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz
-sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
-sudo rm AdGuardHome_linux_amd64.tar.gz
-cd /AdGuardHome/
-sudo ./AdGuardHome -s install
+cd /;\
+sudo apt install sudo nano bind9-host wget -y;\
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm64.tar.gz;\
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz;\
+sudo rm AdGuardHome_linux_amd64.tar.gz;\
+cd /AdGuardHome/;\
+sudo ./AdGuardHome -s install;\
 ```
 
 **c) Raspbian arm86 Server**
 
 ```Text
 cd /
-sudo apt install sudo nano bind9-host wget -y
-sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz
-sudo tar -xvf AdGuardHome_linux_amd64.tar.gz
-sudo rm AdGuardHome_linux_amd64.tar.gz
-cd /AdGuardHome/
-sudo ./AdGuardHome -s install
+sudo apt install sudo nano bind9-host wget -y;\
+sudo wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_arm.tar.gz;\
+sudo tar -xvf AdGuardHome_linux_amd64.tar.gz;\
+sudo rm AdGuardHome_linux_amd64.tar.gz;\
+cd /AdGuardHome/;\
+sudo ./AdGuardHome -s install;\
 ```
 
 **c) CentOS amd64 Server(Access Root account)**
 
 ```Text
-firewall-cmd --zone=public --permanent --add-port 80/tcp
-firewall-cmd --zone=public --permanent --add-port 80/udp
-firewall-cmd --zone=public --permanent --add-port 443/tcp
-firewall-cmd --zone=public --permanent --add-port 443/udp
-firewall-cmd --zone=public --permanent --add-port 53/tcp
-firewall-cmd --zone=public --permanent --add-port 53/udp
-firewall-cmd --zone=public --permanent --add-port 853/tcp
-firewall-cmd --zone=public --permanent --add-port 3000/tcp
-firewall-cmd --reload
-cd /
-yum install epel-release -y
-yum install nano bind9-host wget -y
-wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
-tar -xvf AdGuardHome_linux_amd64.tar.gz
-rm AdGuardHome_linux_amd64.tar.gz
-cd /AdGuardHome/
-./AdGuardHome -s install
+firewall-cmd --zone=public --permanent --add-port 80/tcp;\
+firewall-cmd --zone=public --permanent --add-port 80/udp;\
+firewall-cmd --zone=public --permanent --add-port 443/tcp;\
+firewall-cmd --zone=public --permanent --add-port 443/udp;\
+firewall-cmd --zone=public --permanent --add-port 53/tcp;\
+firewall-cmd --zone=public --permanent --add-port 53/udp;\
+firewall-cmd --zone=public --permanent --add-port 853/tcp;\
+firewall-cmd --zone=public --permanent --add-port 3000/tcp;\
+firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
+firewall-cmd --reload;\
+cd /;\
+yum install epel-release -y;\
+yum install nano bind9-host wget -y;\
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz;\
+tar -xvf AdGuardHome_linux_amd64.tar.gz;\
+rm AdGuardHome_linux_amd64.tar.gz;\
+cd /AdGuardHome/;\
+./AdGuardHome -s install;\
 ```
 
 ![AdGuardHome Image1](/home1.png)
@@ -91,16 +92,16 @@ sudo dpkg-reconfigure tzdata
 - For Ubuntu/Raspbian/Debian/Armbian
 
 ```Text
-sudo apt install certbot -y
-certbot -d domain.ltd --manual --preferred-challenges dns certonly
+sudo apt install certbot -y;\
+certbot -d domain.ltd --manual --preferred-challenges dns certonly;\
 ```
 
 - For CentOS
 
 ```Text
-yum install epel-release -y
-sudo apt install certbot -y
-certbot -d domain.ltd --manual --preferred-challenges dns certonly
+yum install epel-release -y;\
+sudo apt install certbot -y;\
+certbot -d domain.ltd --manual --preferred-challenges dns certonly;\
 ```
 
 Replace domain.ltd with your domain name. Please A Record to your server.
