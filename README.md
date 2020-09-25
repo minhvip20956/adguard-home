@@ -38,9 +38,10 @@ cd /AdGuardHome/;\
 sudo ./AdGuardHome -s install;\
 ```
 
-**c) CentOS amd64 Server(Access Root account)**
+**c) CentOS amd64 Server (Access Root account)**
 
 ```Text
+firewall-cmd --zone=public --permanent --add-port 22/tcp;\
 firewall-cmd --zone=public --permanent --add-port 80/tcp;\
 firewall-cmd --zone=public --permanent --add-port 80/udp;\
 firewall-cmd --zone=public --permanent --add-port 443/tcp;\
@@ -48,7 +49,9 @@ firewall-cmd --zone=public --permanent --add-port 443/udp;\
 firewall-cmd --zone=public --permanent --add-port 53/tcp;\
 firewall-cmd --zone=public --permanent --add-port 53/udp;\
 firewall-cmd --zone=public --permanent --add-port 853/tcp;\
+firewall-cmd --zone=public --permanent --add-port 853/udp;\
 firewall-cmd --zone=public --permanent --add-port 3000/tcp;\
+firewall-cmd --zone=public --permanent --add-port 44444/tcp;\
 firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
 firewall-cmd --reload;\
 cd /;\
@@ -178,36 +181,3 @@ https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
 ```
 
 ![AdGuardHome Image4](/deve.png)
-
-## 5. Edit "AdGuardHome.yaml" (For Advanced):
-
-**a) Open "AdGuardHome.yaml" file with Nano:***
-
-```Text
-cd /AdGuardHome/
-nano AdGuardHome.yaml
-```
-
-**b) "AdGuardHome.yaml" optimization:***
-
-- Add the amount of DNS buffer (This option depends on the amount of free RAM on your server), find "cache_size:" and edit:
-
-```Text
-128 MB = 134217728 (Recommended, For 1GB RAM Server)
-256 MB = 268435456 (For 1,5GB RAM Server)
-1024 MB = 1073741824 (For 2GB RAM Server)
-```
-
-- Other ENV:
-
-```Text
-  cache_ttl_min: 3600
-  cache_ttl_max: 86400
-  safebrowsing_cache_size: 134217728
-```
-
-After setting. Type the following command to restart AdGuard
-
-```Text
-./ AdGuardHome -s restart
-```
