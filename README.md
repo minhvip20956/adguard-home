@@ -144,24 +144,28 @@ crontab -e
 
 ```Text
 https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-https://adaway.org/hosts.txt
+https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
-https://filters.adtidy.org/extension/chromium/filters/15.txt
-https://dbl.oisd.nl/
+https://someonewhocares.org/hosts/zero/hosts
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
+https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
+https://anti-ad.net/easylist.txt
+https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt
+https://filtri-dns.ga/filtri.txt
+https://280blocker.net/files/280blocker_domain.txt
+https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
+https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt
+https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt
+https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt
+https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
 https://abpvn.com/android/abpvn.txt
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/domain.txt
-https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
-https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-https://mirror1.malwaredomains.com/files/justdomains
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
-https://v.firebog.net/hosts/Easylist.txt
-https://ssl.bblck.me/blacklists/hosts-file.txt
-https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+https://dbl.oisd.nl/
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
