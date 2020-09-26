@@ -55,6 +55,8 @@ firewall-cmd --zone=public --permanent --add-port 44444/tcp;\
 firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
 firewall-cmd --reload;\
 cd /;\
+yum clean all;\
+yum update -y;yum upgrade -y;yum autoremove -y;\
 yum install epel-release -y;\
 yum install nano bind9-host wget -y;\
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz;\
