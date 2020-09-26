@@ -169,6 +169,7 @@ https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Fre
 https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
 https://abpvn.com/android/abpvn.txt
 https://dbl.oisd.nl/
+https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/block.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
