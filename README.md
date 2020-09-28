@@ -175,7 +175,6 @@ https://dbl.oisd.nl/
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/block.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
-https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://mirror1.malwaredomains.com/files/justdomains
 http://sysctl.org/cameleon/hosts
