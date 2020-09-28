@@ -181,6 +181,11 @@ https://mirror1.malwaredomains.com/files/justdomains
 http://sysctl.org/cameleon/hosts
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://easylist.to/easylist/easylist.txt
+https://easylist.to/easylist/easyprivacy.txt
+https://easylist-downloads.adblockplus.org/easylist-cookie.txt
+https://easylist.to/easylist/fanboy-social.txt
+https://easylist.to/easylist/fanboy-annoyance.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
