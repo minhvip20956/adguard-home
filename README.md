@@ -173,6 +173,14 @@ https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
 https://abpvn.com/android/abpvn.txt
 https://dbl.oisd.nl/
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/block.txt
+https://github.com/anudeepND/blacklist/blob/master/CoinMiner.txt
+https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://mirror1.malwaredomains.com/files/justdomains
+http://sysctl.org/cameleon/hosts
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
@@ -182,6 +190,7 @@ https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/block.txt
 ```Text
 https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt
 https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/allow.txt
+https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 ```
 
 ![AdGuardHome Image4](/deve.png)
