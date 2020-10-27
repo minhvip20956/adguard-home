@@ -51,6 +51,9 @@ firewall-cmd --zone=public --permanent --add-port 53/udp;\
 firewall-cmd --zone=public --permanent --add-port 853/tcp;\
 firewall-cmd --zone=public --permanent --add-port 853/udp;\
 firewall-cmd --zone=public --permanent --add-port 3000/tcp;\
+firewall-cmd --zone=public --permanent --add-port 11111/tcp;\
+firewall-cmd --zone=public --permanent --add-port 22222/tcp;\
+firewall-cmd --zone=public --permanent --add-port 33333/tcp;\
 firewall-cmd --zone=public --permanent --add-port 44444/tcp;\
 firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
 firewall-cmd --reload;\
