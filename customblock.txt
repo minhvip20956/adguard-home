@@ -1,14 +1,17 @@
-127.0.0.1 coccoc.com
-127.0.0.1 www.coccoc.com
-127.0.0.1 qc.coccoc.com
-127.0.0.1 nt-cdn.coccoc.com
-127.0.0.1 cdn.takataka.coccoc.com
-127.0.0.1 ntrb.qc.coccoc.com
-127.0.0.1 cdn-qc.coccoc.com
-127.0.0.1 qccoccocmedia.vn
-127.0.0.1 www.qccoccocmedia.vn
-127.0.0.1 cdn.comedia.coccoc.com
-127.0.0.1 cdn1.coccoc.com
-127.0.0.1 catalog.qc.coccoc.com
-127.0.0.1 context.qc.coccoc.com
-127.0.0.1 coccoc.r.worldssl.net
+||5hz.org^
+# Block Root Domain
+||*.cn^
+||coccoc.com^
+||www.coccoc.com^
+||qc.coccoc.com^
+||nt-cdn.coccoc.com^
+||cdn.takataka.coccoc.com^
+||ntrb.qc.coccoc.com^
+||cdn-qc.coccoc.com^
+||qccoccocmedia.vn^
+||www.qccoccocmedia.vn^
+||cdn.comedia.coccoc.com^
+||cdn1.coccoc.com^
+||catalog.qc.coccoc.com^
+||context.qc.coccoc.com^
+||coccoc.r.worldssl.net^
