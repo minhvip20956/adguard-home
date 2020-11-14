@@ -5,6 +5,7 @@
 ||*.cn^
 
 #Coccoc Block Ads Host Only
+127.0.0.1 coccoc.vn
 127.0.0.1 coccoc.com
 127.0.0.1 www.coccoc.com
 127.0.0.1 qc.coccoc.com
@@ -21,6 +22,7 @@
 127.0.0.1 coccoc.r.worldssl.net
 127.0.0.1 adsrvr.org
 127.0.0.1 v.adsrvr.org
+127.0.0.1 2mdn.net
 
 # Coccoc Block Ads
 ||coccoc.com^
