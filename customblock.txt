@@ -26,3 +26,5 @@
 ||2mdn.net^
 ||*.coccoc.vn^
 ||*.coccoc.com^
+||adsrvr.org^
+||*.adsrvr.org^
