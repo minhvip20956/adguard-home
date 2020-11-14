@@ -1,6 +1,9 @@
+# DDoS and Hacking Server Block
 ||5hz.org^
+
 # Block Root Domain
 ||*.cn^
+
 # Coccoc Block Ads
 ||coccoc.com^
 ||www.coccoc.com^
