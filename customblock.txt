@@ -24,7 +24,7 @@
 127.0.0.1 v.adsrvr.org
 127.0.0.1 2mdn.net
 
-# Coccoc Block Ads
+# Coccoc Block Ads Adguard Ruler
 ||coccoc.com^
 ||www.coccoc.com^
 ||qc.coccoc.com^
