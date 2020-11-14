@@ -49,23 +49,48 @@
 ||adsrvr.org^
 ||*.adsrvr.org^
 
-#[General]
-0.0.0.0 api.adtimaserver.vn
-0.0.0.0 eclick.vn
-0.0.0.0 admicro.vn
-0.0.0.0 admicro.vcmedia.com
-0.0.0.0 clix.vn
-0.0.0.0 ad-hn.24hstatic.com
-0.0.0.0 ad-hn.24hstatic.com
-0.0.0.0 ad-hcm.24hstatic.com
-0.0.0.0 ad-hcm.24hstatic.com
-0.0.0.0 ad.zing.vn
+#doubleclick.net
+||doubleclick.net^
+||*.doubleclick.net^
+
+#adtimaserver.vn
+||adtimaserver.vn^
+||*.adtimaserver.vn^
+
+#admicro.vn
+||admicro.vn^
+||*.admicro.vn^
+
+#eclick.vn
+||eclick.vn^
+||*.eclick.vn^
+
+#vcmedia.com
+||vcmedia.com^
+||*.vcmedia.com^
+
+#clix.vn
+||clix.vn^
+||*.clix.vn^
+
+#24hstatic.com
+||24hstatic.com^
+||*.24hstatic.com^
+
+#ad.zing.vn
+||ad.zing.vn^
+||*.ad.zing.vn^
+
+#24h.com.vn
+||quangcao.24h.com.vn^
+||*.quangcao.24h.com.vn^
+||ad.24h.com.vn^
+||*.ad.24h.com.vn^
+
+#Other
 0.0.0.0 123c.vn
 0.0.0.0 adfox.vn
-0.0.0.0 quangcao.24h.com.vn
-0.0.0.0 ad.24h.com.vn
 0.0.0.0 ad.vatgia.com
-0.0.0.0 ad.24h.com.vn
 0.0.0.0 cytoclause.com
 0.0.0.0 genericsteps.com
 0.0.0.0 adnetwork.vn
