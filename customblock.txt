@@ -23,6 +23,7 @@
 127.0.0.1 adsrvr.org
 127.0.0.1 v.adsrvr.org
 127.0.0.1 2mdn.net
+127.0.0.1 qc-static.coccoc.com
 
 # Coccoc Block Ads Adguard Ruler
 ||coccoc.com^
@@ -48,6 +49,7 @@
 ||*.coccoc.com^
 ||adsrvr.org^
 ||*.adsrvr.org^
+||qc-static.coccoc.com^
 
 #doubleclick.net
 ||doubleclick.net^
