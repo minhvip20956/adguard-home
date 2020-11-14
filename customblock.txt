@@ -19,6 +19,8 @@
 127.0.0.1 catalog.qc.coccoc.com
 127.0.0.1 context.qc.coccoc.com
 127.0.0.1 coccoc.r.worldssl.net
+127.0.0.1 adsrvr.org
+127.0.0.1 v.adsrvr.org
 
 # Coccoc Block Ads
 ||coccoc.com^
