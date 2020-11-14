@@ -19,3 +19,6 @@
 ||catalog.qc.coccoc.com^
 ||context.qc.coccoc.com^
 ||coccoc.r.worldssl.net^
+||*.qccoccocmedia.vn^
+||*.comedia.coccoc.com^
+||*.qc.coccoc.com^
