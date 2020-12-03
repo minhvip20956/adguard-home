@@ -41,6 +41,7 @@ sudo ./AdGuardHome -s install;\
 **c) CentOS amd64 Server (Access Root account)**
 
 ```Text
+timedatectl set-timezone Asia/Ho_Chi_Minh;\
 firewall-cmd --zone=public --permanent --add-port 22/tcp;\
 firewall-cmd --zone=public --permanent --add-port 80/tcp;\
 firewall-cmd --zone=public --permanent --add-port 80/udp;\
