@@ -57,6 +57,8 @@ firewall-cmd --zone=public --permanent --add-port 22222/tcp;\
 firewall-cmd --zone=public --permanent --add-port 33333/tcp;\
 firewall-cmd --zone=public --permanent --add-port 44444/tcp;\
 firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
+firewall-cmd --zone=public --permanent --add-port 784/tcp;\
+firewall-cmd --zone=public --permanent --add-port 784/udp;\
 firewall-cmd --reload;\
 cd /;\
 yum clean all;\
