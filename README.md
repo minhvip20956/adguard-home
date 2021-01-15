@@ -71,7 +71,10 @@ yum clean all;\
 yum update -y;yum upgrade -y;yum autoremove -y;\
 yum install epel-release -y;\
 yum update -y;yum upgrade -y;yum autoremove -y;\
-yum install nano bind9-host wget -y;\
+yum install nano -y;\
+yum install bind9-host -y;\
+yum install wget -y;\
+yum install tar -y;\
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz;\
 tar -xvf AdGuardHome_linux_amd64.tar.gz;\
 rm -f AdGuardHome_linux_amd64.tar.gz;\
