@@ -43,12 +43,18 @@ sudo ./AdGuardHome -s install;\
 ```Text
 timedatectl set-timezone Asia/Ho_Chi_Minh;\
 firewall-cmd --zone=public --permanent --add-port 22/tcp;\
+firewall-cmd --zone=public --permanent --add-port 53/tcp;\
+firewall-cmd --zone=public --permanent --add-port 53/udp;\
+firewall-cmd --zone=public --permanent --add-port 67/tcp;\
+firewall-cmd --zone=public --permanent --add-port 67/udp;\
 firewall-cmd --zone=public --permanent --add-port 80/tcp;\
 firewall-cmd --zone=public --permanent --add-port 80/udp;\
 firewall-cmd --zone=public --permanent --add-port 443/tcp;\
 firewall-cmd --zone=public --permanent --add-port 443/udp;\
-firewall-cmd --zone=public --permanent --add-port 53/tcp;\
-firewall-cmd --zone=public --permanent --add-port 53/udp;\
+firewall-cmd --zone=public --permanent --add-port 547/tcp;\
+firewall-cmd --zone=public --permanent --add-port 547/udp;\
+firewall-cmd --zone=public --permanent --add-port 784/tcp;\
+firewall-cmd --zone=public --permanent --add-port 784/udp;\
 firewall-cmd --zone=public --permanent --add-port 853/tcp;\
 firewall-cmd --zone=public --permanent --add-port 853/udp;\
 firewall-cmd --zone=public --permanent --add-port 3000/tcp;\
@@ -57,8 +63,6 @@ firewall-cmd --zone=public --permanent --add-port 22222/tcp;\
 firewall-cmd --zone=public --permanent --add-port 33333/tcp;\
 firewall-cmd --zone=public --permanent --add-port 44444/tcp;\
 firewall-cmd --zone=public --permanent --add-port 55555/tcp;\
-firewall-cmd --zone=public --permanent --add-port 784/tcp;\
-firewall-cmd --zone=public --permanent --add-port 784/udp;\
 firewall-cmd --permanent --add-service=http;\
 firewall-cmd --permanent --add-service=https;\
 firewall-cmd --reload;\
