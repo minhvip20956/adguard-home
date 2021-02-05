@@ -200,6 +200,7 @@ https://easylist.to/easylist/easyprivacy.txt
 https://easylist-downloads.adblockplus.org/easylist-cookie.txt
 https://easylist.to/easylist/fanboy-social.txt
 https://easylist.to/easylist/fanboy-annoyance.txt
+https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
