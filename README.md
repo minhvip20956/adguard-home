@@ -191,17 +191,12 @@ https://raw.githubusercontent.com/minhvip20956/AdBlockList/master/list/block.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-https://mirror1.malwaredomains.com/files/justdomains
-http://sysctl.org/cameleon/hosts
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://easylist.to/easylist/easylist.txt
 https://easylist.to/easylist/easyprivacy.txt
-https://easylist-downloads.adblockplus.org/easylist-cookie.txt
 https://easylist.to/easylist/fanboy-social.txt
 https://easylist.to/easylist/fanboy-annoyance.txt
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 ```
 
 ![AdGuardHome Image3](/home3.jpg)
